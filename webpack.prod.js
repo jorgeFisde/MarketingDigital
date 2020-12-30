@@ -67,7 +67,7 @@ module.exports = {
     plugins: [
         new HtmlWebPackPlugin({
             template: './src/index.html',
-            filename: './index.html',
+            filename: './[name].[contenthash].html',
             title: 'Caching'
         }),
         new MiniCssExtractPlugin({
