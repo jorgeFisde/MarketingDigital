@@ -21,13 +21,13 @@ module.exports = {
                     'css-loader'
                 ]
             },
-            // {
-            //     test: /styles\.css$/,
-            //     use: [
-            //         MiniCssExtractPlugin.loader,
-            //         'css-loader'
-            //     ]
-            // },
+            {
+                test: /styles\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader'
+                ]
+            },
             {
                 test: /\.html$/,
                 loader: 'html-loader',
